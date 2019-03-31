@@ -1,0 +1,16 @@
+#Create_basic
+create user1 user1 1000
+create user1 user2 1000
+create user2 user2 -1000
+login user1 user1
+quit
+*
+#
+# expected printouts
+#
+Created user user1
+Failed to create user
+Failed to create user
+Logged in as user1
+Goodbye
+*

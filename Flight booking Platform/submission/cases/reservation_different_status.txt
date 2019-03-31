@@ -1,0 +1,24 @@
+#Reservations basic
+reservations
+create user1 user1 1000
+login user1 user1
+reservations
+search "Seattle WA" "Boston MA" 1 14 1
+book 0
+reservations
+quit
+*
+#
+# expected printouts
+#
+Cannot view reservations, not logged in
+Created user user1
+Logged in as user1
+No reservations found
+Itinerary 0: 1 flight(s), 294 minutes
+ID: 730092 Day: 14 Carrier: B6 Number: 1698 Origin: Seattle WA Dest: Boston MA Duration: 294 Capacity: 8 Price: 807
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 730092 Day: 14 Carrier: B6 Number: 1698 Origin: Seattle WA Dest: Boston MA Duration: 294 Capacity: 8 Price: 807
+Goodbye
+*
